@@ -44,7 +44,24 @@ public class SolEquation {
                         }
                         break;
 			case 3:
-				
+				Scanner inpu = new Scanner (System.in);
+				 System.out.print("Input the value of a in first equation ax^2 + bx + c = 0: ");
+                 int gt1 = inpu.nextInt();
+                 System.out.print("Input the value of b in first equation ax^2 + bx + c = 0: ");
+                 int gt2 = inpu.nextInt();
+                 System.out.print("Input the value of c in first equation ax^2 + bx + c = 0: ");
+                 int gt3 = inpu.nextInt();
+                 double delta = gt2*gt2 - 4*gt1*gt3;
+                 if (delta < 0) {
+                	 System.out.print("No solution");
+                 } else if (delta == 0) {
+                	 System.out.printf("X1 = X2 = %f \n", (float) -gt2/2*gt1); 
+                 } else {
+                	 double giai1 = (-gt2 + Math.sqrt(delta))/ (2*gt1);
+                	 double giai2 = (-gt2 - Math.sqrt(delta))/ (2*gt1);
+                	 System.out.printf("X1 = %f \n", (float) giai1);
+                	 System.out.printf("X2 = %f \n", (float) giai2);
+                 }
 				break;
 			default:
 				System.out.println("Goodbye");
