@@ -1,3 +1,0 @@
-6.1 Question:
-- It's will show a message table showed: You've chosen: NO
-- We use the 'showOptionDialog' method instead of 'showConfirmDialog' to provide a custom set of options.
