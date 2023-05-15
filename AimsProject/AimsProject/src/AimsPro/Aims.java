@@ -1,5 +1,5 @@
 package AimsPro;
-
+import java.util.Scanner;
 public class Aims {
 	public static void main(String[] args) {
 		Cart anOrder = new Cart();
@@ -15,5 +15,7 @@ public class Aims {
 		anOrder.removeDVD(dvd3);
 		System.out.println("Total Cost is: ");
 		System.out.println(anOrder.totalCost());
+		anOrder.print();
+		anOrder.searchid(1);
 	}
 }
