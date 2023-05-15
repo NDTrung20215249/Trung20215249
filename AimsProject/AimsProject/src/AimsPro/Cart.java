@@ -70,4 +70,26 @@ public class Cart {
 		System.out.println("Total cost: " + this.totalCost() + "$");
 		System.out.println("***************************************************");
 	}
+   public void searchid(int id) {
+		for (int i=0; i<qtyOrdered; i++) {
+			if (itemsOrdered[i].getId() == id) {
+				System.out.println(itemsOrdered[i].toString() + "\n");
+				return;
+			}
+		}
+		System.out.println("Can't Find Item");
+	}
+	
+	public void searchtitle(String title) {
+		boolean test = false;
+		for (int i=0; i<qtyOrdered; i++) {
+			if (itemsOrdered[i].isMatch(title)) {
+				System.out.println(itemsOrdered[i].toString() + "\n");
+				test = true;
+			}
+		}
+		if (test = false){
+			System.out.println("Can't Find Item");
+		}
+	}
 }
