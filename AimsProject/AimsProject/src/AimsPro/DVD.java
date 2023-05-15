@@ -1,6 +1,8 @@
 package AimsPro;
 
 public class DVD {
+    private static int nbDigitalVideoDiscs = 0;
+	private int id;
 	private String title;
 	private String category;
 	private String director;
@@ -8,11 +10,15 @@ public class DVD {
 	private float cost;
 	public DVD(String title) {
 		super();
+		nbDigitalVideoDiscs++;
+		this.id = nbDigitalVideoDiscs; 
 		this.title = title;
 	}
 	
 	public DVD(String title, String category, float cost) {
 		super();
+		nbDigitalVideoDiscs++;
+		this.id = nbDigitalVideoDiscs; 
 		this.title = title;
 		this.category = category;
 		this.cost = cost;
@@ -21,6 +27,8 @@ public class DVD {
 
 	public DVD(String title, String category, String director, float cost) {
 		super();
+		nbDigitalVideoDiscs++;
+		this.id = nbDigitalVideoDiscs; 
 		this.title = title;
 		this.category = category;
 		this.director = director;
@@ -29,6 +37,8 @@ public class DVD {
 
 	public DVD(String title, String category, String director, int length, float cost) {
 		super();
+		nbDigitalVideoDiscs++;
+		this.id = nbDigitalVideoDiscs; 
 		this.title = title;
 		this.category = category;
 		this.director = director;
@@ -51,11 +61,7 @@ public class DVD {
 	public float getCost() {
 		return cost;
 	}
-<<<<<<< HEAD
 	public void setTitle(String title) {
 		this.title = title;
 	}
-=======
-
->>>>>>> 2af8cca33943088399c27a7bc363587ccae969e3
 }
