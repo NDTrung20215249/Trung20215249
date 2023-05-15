@@ -51,7 +51,11 @@ public class DVD {
 	public float getCost() {
 		return cost;
 	}
+<<<<<<< HEAD
 	public void setTitle(String title) {
 		this.title = title;
 	}
+=======
+
+>>>>>>> 2af8cca33943088399c27a7bc363587ccae969e3
 }
