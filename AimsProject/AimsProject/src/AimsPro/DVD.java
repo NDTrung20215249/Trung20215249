@@ -45,6 +45,10 @@ public class DVD {
 		this.length = length;
 		this.cost = cost;
 	}
+	
+	public int getId() {
+		return id;
+	}
 
 	public String getTitle() {
 		return title;
@@ -63,5 +67,11 @@ public class DVD {
 	}
 	public void setTitle(String title) {
 		this.title = title;
+	}
+	public String toString() {
+		return "DVD - " + this.getTitle() + " - " + this.getCategory() + " - " + this.getDirector() + " - " + this.getLength() + " : " + this.getCost() + " $";
+	}
+	public boolean isMatch(String title) {
+		return title == this.getTitle();
 	}
 }
