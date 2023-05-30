@@ -11,3 +11,10 @@ In the given code, the swap method and the changeTitle method both receive refer
 Similarly, when i pass jungleDVD and cinderellaDVD.getTitle() to the changeTitle method, the reference to jungleDVD is copied into the dvd parameter. Inside the changeTitle method, the dvd.setTitle(title) statement modifies the title of the object referred to by dvd, which is the same object as jungleDVD. However, when i reassign dvd to a new DVD object with the old title, it does not affect the original jungleDVD reference in the main method.
 
 In the given code, when i call the changeTitle method with the arguments jungleDVD and cinderellaDVD.getTitle(), the dvd parameter receives a copy of the reference to the jungleDVD object. Inside the changeTitle method, the statement dvd.setTitle(title) modifies the title of the object referred to by dvd, which is indeed the jungleDVD object itself.
+
+
+Lab 04:
+1. Cart is aggregate of Media. Store is aggregate of Media. CompactDisc is aggregate of Track
+2. If the passing object is not an instance of Media, equals() returns false.
+3. Because Book, CompactDisc and DigitalVideoDisc inherit Media, objects book, cd, dvd are also instances of Media. 
+4. Class Media implements Comparable interface
